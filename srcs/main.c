@@ -1,5 +1,9 @@
 #include "snake.h"
 
+char framebuf[FRAMEBUF_SIZE];
+int framelen;
+int offsetX, offsetY;
+
 int	main(void)
 {
 	/*

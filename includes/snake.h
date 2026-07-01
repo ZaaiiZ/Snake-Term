@@ -17,9 +17,9 @@
   GLOBAL VARIABLES & FUNCTIONS
 */
 #define FRAMEBUF_SIZE 8192
-char framebuf[FRAMEBUF_SIZE];
-int framelen;
-int	offsetX, offsetY;
+extern char framebuf[FRAMEBUF_SIZE];
+extern int framelen;
+extern int	offsetX, offsetY;
 #define fb_printf(...) \
 	framelen += snprintf(framebuf + framelen, \
 						 FRAMEBUF_SIZE - framelen, __VA_ARGS__)
